@@ -1,0 +1,49 @@
+================================================================================
+UDACITY DEVOPS PROJECT SUBMISSION DETAILS: MOVIE PICTURE PIPELINE
+================================================================================
+
+1. PUBLIC GITHUB REPOSITORY LINK:
+--------------------------------------------------------------------------------
+GitHub Repository: https://github.com/Keerthevasan007/devops
+
+
+2. LIVE APPLICATION & API SERVICE LOADBALANCER URLS (AWS EKS):
+--------------------------------------------------------------------------------
+Frontend Application URL: http://ab86ff318f3ac41a581984daff4fae3b-458854893.us-east-1.elb.amazonaws.com
+Backend API Endpoint URL: http://a26bb9bbde111494ea08537d89c089ac-2031214720.us-east-1.elb.amazonaws.com/movies
+
+
+3. GITHUB ACTIONS WORKFLOWS (.github/workflows/):
+--------------------------------------------------------------------------------
+- Frontend Continuous Integration : .github/workflows/frontend-ci.yaml [PASSED]
+- Backend Continuous Integration  : .github/workflows/backend-ci.yaml  [PASSED]
+- Frontend Continuous Deployment  : .github/workflows/frontend-cd.yaml  [PASSED]
+- Backend Continuous Deployment   : .github/workflows/backend-cd.yaml   [PASSED]
+
+
+4. AMAZON ECR REPOSITORIES:
+--------------------------------------------------------------------------------
+- Frontend ECR URI : 370031761113.dkr.ecr.us-east-1.amazonaws.com/frontend
+- Backend ECR URI  : 370031761113.dkr.ecr.us-east-1.amazonaws.com/backend
+
+
+5. AWS EKS CLUSTER DETAILS:
+--------------------------------------------------------------------------------
+- Cluster Name     : cluster
+- Kubernetes Ver.  : 1.31
+- Node Group Name  : udacity (v1.31)
+- Active Node      : ip-10-0-1-138.ec2.internal
+
+
+6. SCREENSHOT EVIDENCE MAPPING (screenshots/):
+--------------------------------------------------------------------------------
+- 13_frontend_CI.png       : Successful run of Frontend Continuous Integration
+- 14_frontend_CD.png       : Successful run of Frontend Continuous Deployment
+- 15_backend_CI.png        : Successful run of Backend Continuous Integration
+- 16_backend_CD.png        : Successful run of Backend Continuous Deployment
+- 17_frontend.png          : Frontend web app loaded in browser via LoadBalancer DNS
+- 12_json.png              : Backend API /movies endpoint returning JSON list
+- 9_kubectl_output.png     : 'kubectl get all -n default' output showing running pods
+- 10_kubectl_frontend.png  : 'kubectl describe deploy frontend' output
+- 11_kubectl_backend.png   : 'kubectl describe deploy backend' output
+================================================================================
